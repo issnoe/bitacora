@@ -71,16 +71,10 @@ const config = {
         },
         items: [
           {
-            sidebarId: "projectsSidebar",
-            position: "left",
-            label: "Projects",
-            to: "/projects",
-          },
-          {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Projects",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
