@@ -1,17 +1,23 @@
-endi:
-  name: Endilie Yacop Sucipto
+luisjasso:
+  name: luisjassolie Yacop Sucipto
   title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+  url: https://github.com/luisjassoliey
+  image_url: https://github.com/luisjassoliey.png
 
-yangshun:
-  name: Yangshun Tay
+luisjasso:
+  name: luisjasso Tay
   title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+  url: https://github.com/luisjasso
+  image_url: https://github.com/luisjasso.png
 
-slorber:
+luisjasso:
   name: Sébastien Lorber
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+  image_url: https://github.com/luisjasso.png
+
+luisjasso:
+  name: Luis Jasso
+  title: Software Enginner
+  url: https://sebastienlorber.com
+  image_url: https://github.com/luisjasso.png
