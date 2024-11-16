@@ -9,5 +9,3 @@ tags: [.Net Core, C#, React, EF, Postgres]
 This is a project lab that use **C# .NET Core**!
 
 ## CQRS Command Query Request Segregation
-
-

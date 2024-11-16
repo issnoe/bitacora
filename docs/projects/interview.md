@@ -3,12 +3,8 @@ sidebar_label: "Intervie Questions"
 sidebar_position: 1
 tags: [.Net Core, C#, React, EF, Postgres]
 ---
-
-# Intervie Questions Answers
-
-This is a project lab that use **C# .NET Core**!
-
-### What is the difference between the readonly and const on C#
+# Interview Questions
+## What is the difference between the readonly and const on C#
 
 > readonly and cosnt are ways to declare properties that can not be updated but it has a diferent implementations.
 
@@ -36,3 +32,40 @@ public class MyClass
 }
 
 ```
+## SOLID Principes
+
+## Indexs on SQL 
+
+## How optimized a Query 
+
+## Entity Graph
+## Async en C#
+
+
+## SQL Joins
+```sql
+
+select T1.id  Group by (T2.id) whre
+ inner join
+// left t1 t2
+// right t1 t2
+
+
+//
+```
+
+## SQL GROUP BY
+```sql
+
+select T1.id  Group by (T2.id) whre
+ inner join
+// left t1 t2
+// right t1 t2
+
+
+//
+```
+## SQL max
+## SQL 
+## SQL and C# node js insert
+

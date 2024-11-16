@@ -1,8 +1,9 @@
 ---
 sidebar_label: "Hackerank"
-sidebar_position: 3
+sidebar_position: 1
 tags: [C#, javascript, Algorithms]
 ---
+
 ## Sum point from Matches
 
 Dado dos arreglos compara cada indixe si a>b suma un punto, si b>a b suma un punto si son iguales ninguno
@@ -85,7 +86,7 @@ Difference: |4 - 19| = 15
 
 Note: |x| is the absolute value of x
 
-### Javascript result
+### Javascript
 
 ```js
 function diagonalDifference(arr) {
@@ -116,21 +117,7 @@ const result = diagonalDifference([[3], [11, 2, 4], [4, 5, 6], [10, 8, -12]]);
 console.log(`${result} : ${result == 15}`);
 ```
 
-```csharp
-static int diagonalDifference(List<List<int>> arr){
-  int sizeChild = 0;
-
-  for(int i =0 ; i < arr.Count; i++){
-    if(sizeChild < arr[i].Count){
-      sizeChild = arr[i].Count;
-    }
-  }
-  Console.WriteLine(sizeChild)
-
-}
-```
-
-### C# Solve
+### C#
 
 ```csharp
 using System;
@@ -196,7 +183,7 @@ There are elements, two positive, two negative and one zero. Their ratios are
 0.400000
 0.200000
 
-### SCharp
+### C#
 
 ```csharp
 using System;
@@ -268,9 +255,9 @@ radioCal([1, 1, -1, -1, 0]);
 
 This is a staircase of size :
 
-### CSharp Solution
+### C#
 
-````csharp
+```csharp
 /*
    #
   ##
@@ -306,5 +293,73 @@ class Program
     {
         radioCal(6);
     }
-}```
-````
+}
+```
+## Mini and Max sum 
+
+Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+Example
+```chsarp
+arr = [1,3,5,7,9]
+s1 = [1,3,5,7]
+s2 = [3,5,7,9]
+```
+
+The minimum sum is  and the maximum sum is . The function prints
+
+### C#
+```csharp
+public static void sumMM(List<int> numbers)
+{
+    // highlight-next-line 
+    numbers.Sort(); // On other languages you most sor by your own
+    // highlight-next-line 
+    long sumMax = 0; // if the number sum incleat up 2,147,483,647 will convert it to negative
+    long sumMin = 0;
+    for (int i = 0; i < numbers.Count; i++)
+    {
+        if (i > 0)
+        {
+            sumMax += numbers[i];
+        }
+        if (i < numbers.Count -1)
+        {
+            sumMin += numbers[i];
+        }
+    }
+    Console.WriteLine($"{sumMin} {sumMax}");
+}
+```
+## Candle 
+You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
+
+Example:
+candles = [4,4,1,3];
+
+### C#
+```csharp
+ public static int sumMM(List<int> candles)
+    {
+        // highlight-next-line 
+        int tallest = candles.Max(); // Inted of use a for it beeter use Linq add using System.Linq;
+        /*candles[0];
+        for (int i = 0; i < candles.Count; i++)
+        {
+            if (candles[i] > tallest)
+            {
+                tallest = candles[i];
+            }
+        }
+        */
+        int counter = 0;
+        for (int i = 0; i < candles.Count; i++)
+        {
+            if (candles[i] == tallest)
+            {
+                counter++;
+            }
+        }
+        return counter;
+    }
+```
